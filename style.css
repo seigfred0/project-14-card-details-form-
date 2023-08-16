@@ -1,0 +1,63 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+
+}
+
+
+.image {
+    background-image: url(images/bg-main-mobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 35vh;
+
+    position: relative;
+
+    padding: 1.5em;
+}
+
+.card {
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    width: 270px;
+    height: 150px;
+    position: absolute;
+}
+
+.image_card-back {
+    background-image: url(images/bg-card-back.png);
+    right: 1.5em;
+   
+}
+
+.card-text-back {
+    position: absolute;
+    right: 3.5em;
+    top: 7em;
+
+    color: white;
+    font-size: 0.60rem;
+}
+
+
+.image_card-front {
+    background-image: url(images/bg-card-front.png);
+    left: 1.5em;
+    bottom: -3em;
+}
+
+
+
+
+
+.border {
+    border: 2   px dotted black;
+}
+
