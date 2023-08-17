@@ -99,8 +99,8 @@ form {
 
 .text {
     padding: 1.5em;
-
-    margin-top: 4em;
+    margin-top: 4.5em;
+    margin-bottom: 3em;
 }
 
 
@@ -127,8 +127,16 @@ form {
 
 .form-details_text {
     display: flex;
-    gap: 1em;
 }
+
+.form-details_text .date {
+    width: 55%;
+}
+
+.form-details_text .cvc {
+    width: 50%;
+}
+
 
 .form-details_placeholder {
     display: flex;
@@ -162,4 +170,50 @@ form {
 
     font-size: 1rem;
     font-family: 'Space Grotesk', sans-serif;
+}
+
+
+
+/* Completed State | Thank You Section */
+
+.incomplete {
+    display: show;
+}
+
+.complete {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+
+
+    /* border: 1px solid black; */
+}
+
+.complete h1 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    margin-top: 1.15em;
+}
+
+.complete p{
+    font-weight: 500;
+    color: hsl(0, 0%, 75%);
+    font-size: 1.10rem;
+
+    margin-top: 1em;
+}
+
+.complete button {
+    width: 100%;
+    background-color: hsl(278, 68%, 11%);
+    color: hsl(270, 3%, 87%);
+
+    padding: 0.75em;
+    border-radius: 7px;
+
+    font-size: 1rem;
+    font-family: 'Space Grotesk', sans-serif;
+
+    margin-top: 3em;
 }

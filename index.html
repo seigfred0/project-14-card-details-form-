@@ -36,47 +36,49 @@
       </div>      
     </div>
 
-    <div class="text">
+    <div class="text incomplete" id="cardSection">
       <form>
         <div class="form-name">
           <label for="cardName">CARDHOLDER NAME</label>
-          <input type="text" id="cardName" placeholder="e.g. Jane Appleseed">
+          <input type="text" id="cardName" placeholder="e.g. Jane Appleseed" required>
         </div>
  
         <div class="form-number">
           <label for="cardNumber">CARD NUMBER</label>
-          <input type="number" id="cardNumber" placeholder="e.g. 1234 5678 9123 0000">
+          <input type="number" id="cardNumber" placeholder="e.g. 1234 5678 9123 0000" required>
         </div>
 
         <div class="form-details">
           <div class="form-details_text">
-            <label for="cardMonth,cardYear">Exp. Date (MM/YY)</label>
-            <label for="cardCVC">CVC</label>
+            <label for="cardMonth,cardYear" class="date">Exp. Date (MM/YY)</label>
+            <label for="cardCVC" class="cvc">CVC</label>
           </div>
           <div class="form-details_placeholder">
-            <input type="number" id="cardMonth" class="month card-details" placeholder="MM">
-            <input type="number" id="cardYear" class="year card-details" placeholder="YY">
-            <input type="number" id="cardCVC" class="cvc card-details" placeholder="CVC">
+            <input type="number" id="cardMonth" class="month card-details" placeholder="MM" required>
+            <input type="number" id="cardYear" class="year card-details" placeholder="YY" required>
+            <input type="number" id="cardCVC" class="cvc card-details" placeholder="CVC" required>
           </div>
         </div>
 
         <div class="form-submit">
-          <input type="submit" value="Confirm">
+          <input type="submit" value="Confirm" id="submitBtn">
         </div>
       </form>
     </div>
+
+    <div class="text complete" id="thankYouSection">
+      <img src="images/icon-complete.svg" alt="">
+      <h1>Thank You!</h1>
+      <p>We've added your card details</p>
+      <button>Continue</button>
+    </div>
   </div>
-
-
-  <!-- Completed state start -->
-
-  <!-- Thank you!
-  We've added your card details
-  Continue -->
   
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
+
+  <script src="main.js"></script>
 </body>
 </html>

@@ -30,4 +30,8 @@ The designs were created to the following widths:
 ### Font
 
 - Family: [Space Grotesk](https://fonts.google.com/specimen/Space+Grotesk)
-- Weights: 500
+- Weights: 500\
+
+
+
+
