@@ -51,13 +51,115 @@ body {
     background-image: url(images/bg-card-front.png);
     left: 1.5em;
     bottom: -3em;
+    padding: 1em;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.image_card-front img {
+    width: 20%;
+}
+
+.card-front_middle {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+
+    margin-top: 2.25em;
+    letter-spacing: 2px;
+   
+}
+
+.card-front_bottom {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 0.60rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    margin-top: 1em;
+  
+}
+
+.card p {
+    color: white;
+}
+
+/* Text Section | Form Section */
+
+form {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+
+}
+
+.text {
+    padding: 1.5em;
+
+    margin-top: 4em;
 }
 
 
+.form-name,
+.form-number,
+.form-details {
+    display: flex;
+    flex-direction: column;
 
-
-
-.border {
-    border: 2   px dotted black;
+    gap: 0.5em;
+    font-size: 0.9rem;
 }
 
+.form-name input,
+.form-number input,
+.card-details {
+    border: 1.5px solid hsla(278, 68%, 11%, 0.319);
+    padding: 0.65em;
+    border-radius: 6px;
+
+    font-size: 1rem;
+}
+
+
+.form-details_text {
+    display: flex;
+    gap: 1em;
+}
+
+.form-details_placeholder {
+    display: flex;
+
+    /* flex-wrap: wrap; */
+    gap: 0.5em;
+}
+
+.form-details_placeholder .month {
+    width: 25%;
+}
+
+.form-details_placeholder .year {
+    width: 25%;
+}
+
+.form-details_placeholder .cvc {
+    width: 50%;
+}
+
+
+/* Form Submit */
+.form-submit input {
+    width: 100%;
+    background-color: hsl(278, 68%, 11%);
+
+    color: hsl(270, 3%, 87%);
+
+    padding: 0.75em;
+    border-radius: 7px;
+
+    font-size: 1rem;
+    font-family: 'Space Grotesk', sans-serif;
+}
