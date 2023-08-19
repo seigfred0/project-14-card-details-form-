@@ -114,6 +114,8 @@ form {
     font-size: 0.9rem;
 }
 
+
+
 .form-name input,
 .form-number input,
 .card-details {
@@ -140,23 +142,44 @@ form {
 
 .form-details_placeholder {
     display: flex;
+    /* flex-basis: 100%; */
 
-    /* flex-wrap: wrap; */
-    gap: 0.5em;
+   
 }
 
-.form-details_placeholder .month {
+.form-details_placeholder .column {
+    display: flex;
+    flex-direction: column;
+
+    /* background-color: gray; */
+}
+
+
+.form-details_placeholder .columnOne {
     width: 25%;
 }
 
-.form-details_placeholder .year {
+.form-details_placeholder .columnOne input {
+    width: 90%;
+}
+
+.form-details_placeholder .columnTwo {
     width: 25%;
 }
 
-.form-details_placeholder .cvc {
+.form-details_placeholder .columnTwo input {
+    width: 90%;
+}
+
+.form-details_placeholder .columnThree {
     width: 50%;
 }
 
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
 
 /* Form Submit */
 .form-submit input {
@@ -172,6 +195,10 @@ form {
     font-family: 'Space Grotesk', sans-serif;
 }
 
+.error {
+    color: hsl(0, 100%, 66%);
+    font-size: 0.75rem;
+}
 
 
 /* Completed State | Thank You Section */

@@ -41,11 +41,14 @@
         <div class="form-name">
           <label for="cardName">CARDHOLDER NAME</label>
           <input type="text" id="cardName" placeholder="e.g. Jane Appleseed" required>
+          <p class="error" id="cardNameError">Hello</p>
         </div>
  
         <div class="form-number">
           <label for="cardNumber">CARD NUMBER</label>
           <input type="number" id="cardNumber" placeholder="e.g. 1234 5678 9123 0000" required>
+          <p class="error" id="cardNameError">Numer</p>
+
         </div>
 
         <div class="form-details">
@@ -54,9 +57,18 @@
             <label for="cardCVC" class="cvc">CVC</label>
           </div>
           <div class="form-details_placeholder">
-            <input type="number" id="cardMonth" class="month card-details" placeholder="MM" required>
-            <input type="number" id="cardYear" class="year card-details" placeholder="YY" required>
-            <input type="number" id="cardCVC" class="cvc card-details" placeholder="CVC" required>
+            <div class="column columnOne">
+              <input type="number" id="cardMonth" class="month card-details" placeholder="MM" required>
+              <p class="error" id="cardNameError">MM</p>
+            </div>
+            <div class="column columnTwo">
+              <input type="number" id="cardYear" class="year card-details" placeholder="YY" required>
+              <p class="error" id="cardNameError">YY</p>
+            </div>
+            <div class="column columnThree">
+              <input type="number" id="cardCVC" class="cvc card-details" placeholder="CVC" required>
+              <p class="error" id="cardNameError">CVC</p>
+            </div>
           </div>
         </div>
 
