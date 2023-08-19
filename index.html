@@ -16,7 +16,7 @@
   <div class="container">
     <div class="image">
       <div class="image_card-back border card">
-        <p class="card-text-back">000</p>
+        <p class="card-text-back" id="updateCardCvc">000</p>
       </div>
     
       <div class="image_card-front  card">
@@ -24,14 +24,11 @@
           <img src="images/card-logo.svg" alt="">
         </div>
         <div class="card-front_middle">
-          <p>0000</p>
-          <p>0000</p>
-          <p>0000</p>
-          <p>0000</p>
+          <p id="updateCardNumber">0000 0000 0000 0000</p>
         </div>
         <div class="card-front_bottom">
-          <p>Jane Appleseed</p>
-          <p>00/00</p>
+          <p id="updateCardName">Jane Appleseed</p>
+          <p id="updateCardDate">00/00</p>
         </div>
       </div>      
     </div>
@@ -40,14 +37,14 @@
       <form>
         <div class="form-name">
           <label for="cardName">CARDHOLDER NAME</label>
-          <input type="text" id="cardName" placeholder="e.g. Jane Appleseed" required>
-          <p class="error" id="cardNameError">Hello</p>
+          <input type="text" id="cardName" placeholder="e.g. Jane Appleseed"  required>
+          <p class="error" id="cardNameError"></p>
         </div>
  
         <div class="form-number">
           <label for="cardNumber">CARD NUMBER</label>
-          <input type="number" id="cardNumber" placeholder="e.g. 1234 5678 9123 0000" required>
-          <p class="error" id="cardNameError">Numer</p>
+          <input type="number" id="cardNumber" placeholder="e.g. 1234 5678 9123 0000" maxlength="16" required>
+          <p class="error" id="cardNumberError"></p>
 
         </div>
 
@@ -58,16 +55,16 @@
           </div>
           <div class="form-details_placeholder">
             <div class="column columnOne">
-              <input type="number" id="cardMonth" class="month card-details" placeholder="MM" required>
-              <p class="error" id="cardNameError">MM</p>
+              <input type="number" id="cardMonth" class="month card-details" placeholder="MM" maxlength="2" required>
+              <p class="error" id="cardMonthError"></p>
             </div>
             <div class="column columnTwo">
-              <input type="number" id="cardYear" class="year card-details" placeholder="YY" required>
-              <p class="error" id="cardNameError">YY</p>
+              <input type="number" id="cardYear" class="year card-details" placeholder="YY" maxlength="2" required>
+              <p class="error" id="cardYearError"></p>
             </div>
             <div class="column columnThree">
-              <input type="number" id="cardCVC" class="cvc card-details" placeholder="CVC" required>
-              <p class="error" id="cardNameError">CVC</p>
+              <input type="number" id="cardCVC" class="cvc card-details" placeholder="CVC" maxlength="3" required>
+              <p class="error" id="cardCvcError"></p>
             </div>
           </div>
         </div>
