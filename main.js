@@ -60,7 +60,6 @@ submitButton.addEventListener('click', function(event) {
     }
 
 
-
     // Checking
     if (isValid) {
         cardSection.style.display = 'none';
@@ -78,12 +77,4 @@ submitButton.addEventListener('click', function(event) {
        
        
     }
-
-    console.log(isValid)
 })
-
-
-
-// 1234567890123456 | !document.querySelector('.error').textContent
-
-// last point of code : I am about to validate the form making it impossible to proceed to the thank you page until all blanks are filled.
